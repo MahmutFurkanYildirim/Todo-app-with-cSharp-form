@@ -146,6 +146,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.BackColor = System.Drawing.SystemColors.InactiveCaption;
 			this.ClientSize = new System.Drawing.Size(582, 270);
 			this.Controls.Add(this.due_label_update);
@@ -160,6 +161,7 @@
 			this.Controls.Add(this.Create_Label);
 			this.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+			this.MaximizeBox = false;
 			this.Name = "UpdateTodoForm";
 			this.Text = "UpdateTodoForm";
 			this.ResumeLayout(false);

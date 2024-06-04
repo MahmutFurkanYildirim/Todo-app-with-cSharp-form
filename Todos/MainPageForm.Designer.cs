@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPageForm));
 			this.Create_Label = new System.Windows.Forms.Label();
 			this.enter_label = new System.Windows.Forms.Label();
 			this.Kategori_label = new System.Windows.Forms.Label();
@@ -101,6 +102,7 @@
 			this.Save_button.TabIndex = 5;
 			this.Save_button.Text = "Save";
 			this.Save_button.UseVisualStyleBackColor = true;
+			this.Save_button.Click += new System.EventHandler(this.Save_button_Click);
 			// 
 			// category_cmbx
 			// 
@@ -149,6 +151,7 @@
 			// 
 			// todo_datagrd
 			// 
+			this.todo_datagrd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.todo_datagrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.todo_datagrd.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.todo_datagrd.Location = new System.Drawing.Point(3, 26);
@@ -156,8 +159,9 @@
 			this.todo_datagrd.Size = new System.Drawing.Size(586, 318);
 			this.todo_datagrd.TabIndex = 0;
 			// 
-			// MainPage
+			// MainPageForm
 			// 
+			this.AcceptButton = this.Save_button;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -175,8 +179,10 @@
 			this.Controls.Add(this.enter_label);
 			this.Controls.Add(this.Create_Label);
 			this.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.Name = "MainPage";
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
+			this.Name = "MainPageForm";
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Create To-do";
