@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Todos
 {
@@ -48,8 +49,13 @@ namespace Todos
 				category_cmbx.Items.Add(category);
             }
 
+			DataTable dataTable = new DataTable();
+			SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("Select * From Todo", connector.Connect());
+			sqlDataAdapter.Fill(dataTable);
+			todo_datagrd.DataSource = dataTable;
 
-        }
+
+		}
 
 		private void Save_button_Click(object sender, EventArgs e)
 		{
@@ -63,7 +69,13 @@ namespace Todos
 			command.Parameters.AddWithValue("@category",category_cmbx.Text);
 			command.ExecuteNonQuery();
 			connector.Connect().Close();
-			MessageBox.Show("Todo Added", "Bilgi", MessageBoxButtons.OK,MessageBoxIcon.Information);
+			MessageBox.Show("Todo Added", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+			DataTable dataTable = new DataTable();
+			SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("Select * From Todo",connector.Connect());
+			sqlDataAdapter.Fill(dataTable);
+			todo_datagrd.DataSource = dataTable;
+			
 
 		}
 	}

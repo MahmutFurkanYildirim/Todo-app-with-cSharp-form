@@ -50,7 +50,7 @@
 			this.Create_Label.AutoSize = true;
 			this.Create_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Create_Label.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.Create_Label.Location = new System.Drawing.Point(223, 20);
+			this.Create_Label.Location = new System.Drawing.Point(352, 23);
 			this.Create_Label.Name = "Create_Label";
 			this.Create_Label.Size = new System.Drawing.Size(223, 34);
 			this.Create_Label.TabIndex = 0;
@@ -77,7 +77,7 @@
 			// priority_label
 			// 
 			this.priority_label.AutoSize = true;
-			this.priority_label.Location = new System.Drawing.Point(45, 168);
+			this.priority_label.Location = new System.Drawing.Point(485, 100);
 			this.priority_label.Name = "priority_label";
 			this.priority_label.Size = new System.Drawing.Size(60, 16);
 			this.priority_label.TabIndex = 3;
@@ -96,7 +96,7 @@
 			this.Save_button.BackColor = System.Drawing.Color.Lavender;
 			this.Save_button.Cursor = System.Windows.Forms.Cursors.Default;
 			this.Save_button.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.Save_button.Location = new System.Drawing.Point(545, 194);
+			this.Save_button.Location = new System.Drawing.Point(404, 208);
 			this.Save_button.Name = "Save_button";
 			this.Save_button.Size = new System.Drawing.Size(95, 35);
 			this.Save_button.TabIndex = 5;
@@ -115,7 +115,7 @@
 			// priority_cmbx
 			// 
 			this.priority_cmbx.FormattingEnabled = true;
-			this.priority_cmbx.Location = new System.Drawing.Point(233, 168);
+			this.priority_cmbx.Location = new System.Drawing.Point(673, 99);
 			this.priority_cmbx.Name = "priority_cmbx";
 			this.priority_cmbx.Size = new System.Drawing.Size(211, 24);
 			this.priority_cmbx.TabIndex = 7;
@@ -124,7 +124,7 @@
 			// 
 			this.due_date.CustomFormat = "dd/MM/yyyy HH:mm";
 			this.due_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-			this.due_date.Location = new System.Drawing.Point(233, 198);
+			this.due_date.Location = new System.Drawing.Point(673, 136);
 			this.due_date.Name = "due_date";
 			this.due_date.Size = new System.Drawing.Size(211, 23);
 			this.due_date.TabIndex = 8;
@@ -132,7 +132,7 @@
 			// due_label
 			// 
 			this.due_label.AutoSize = true;
-			this.due_label.Location = new System.Drawing.Point(45, 203);
+			this.due_label.Location = new System.Drawing.Point(485, 141);
 			this.due_label.Name = "due_label";
 			this.due_label.Size = new System.Drawing.Size(70, 16);
 			this.due_label.TabIndex = 9;
@@ -141,10 +141,10 @@
 			// todo_grpbx
 			// 
 			this.todo_grpbx.Controls.Add(this.todo_datagrd);
-			this.todo_grpbx.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.todo_grpbx.Location = new System.Drawing.Point(48, 261);
+			this.todo_grpbx.Font = new System.Drawing.Font("Lucida Fax", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.todo_grpbx.Location = new System.Drawing.Point(30, 261);
 			this.todo_grpbx.Name = "todo_grpbx";
-			this.todo_grpbx.Size = new System.Drawing.Size(592, 347);
+			this.todo_grpbx.Size = new System.Drawing.Size(902, 347);
 			this.todo_grpbx.TabIndex = 10;
 			this.todo_grpbx.TabStop = false;
 			this.todo_grpbx.Text = "To-do";
@@ -154,9 +154,9 @@
 			this.todo_datagrd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.todo_datagrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.todo_datagrd.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.todo_datagrd.Location = new System.Drawing.Point(3, 26);
+			this.todo_datagrd.Location = new System.Drawing.Point(3, 16);
 			this.todo_datagrd.Name = "todo_datagrd";
-			this.todo_datagrd.Size = new System.Drawing.Size(586, 318);
+			this.todo_datagrd.Size = new System.Drawing.Size(896, 328);
 			this.todo_datagrd.TabIndex = 0;
 			// 
 			// MainPageForm
@@ -166,7 +166,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.BackColor = System.Drawing.Color.Lavender;
-			this.ClientSize = new System.Drawing.Size(684, 620);
+			this.ClientSize = new System.Drawing.Size(957, 620);
 			this.Controls.Add(this.todo_grpbx);
 			this.Controls.Add(this.due_label);
 			this.Controls.Add(this.due_date);
